@@ -1,0 +1,285 @@
+[
+  {
+    "id": "pt-001",
+    "name": "Amara Okafor",
+    "age": 45,
+    "sex": "female",
+    "grantToken": "DEMO_GRANT_PT001",
+    "systems": ["cardiovascular", "metabolic"],
+    "medications": [1191, 11289],
+    "events": [
+      {
+        "id": "ev-001a",
+        "code": "2093-3",
+        "system": "cardiovascular",
+        "label": "LDL Cholesterol",
+        "value": "148",
+        "unit": "mg/dL",
+        "occurredAt": "2026-07-20T08:00:00Z",
+        "baselineValue": "102",
+        "rangeMin": 0,
+        "rangeMax": 130,
+        "status": "critical"
+      },
+      {
+        "id": "ev-001b",
+        "code": "2093-3",
+        "system": "cardiovascular",
+        "label": "LDL Cholesterol",
+        "value": "138",
+        "unit": "mg/dL",
+        "occurredAt": "2026-07-15T08:00:00Z",
+        "baselineValue": "102",
+        "rangeMin": 0,
+        "rangeMax": 130,
+        "status": "watch"
+      },
+      {
+        "id": "ev-001c",
+        "code": "2093-3",
+        "system": "cardiovascular",
+        "label": "LDL Cholesterol",
+        "value": "115",
+        "unit": "mg/dL",
+        "occurredAt": "2026-07-08T08:00:00Z",
+        "baselineValue": "102",
+        "rangeMin": 0,
+        "rangeMax": 130,
+        "status": "stable"
+      },
+      {
+        "id": "ev-001d",
+        "code": "55284-4",
+        "system": "cardiovascular",
+        "label": "Blood Pressure (Systolic)",
+        "value": "149",
+        "unit": "mmHg",
+        "occurredAt": "2026-07-20T08:05:00Z",
+        "baselineValue": "118",
+        "rangeMin": 90,
+        "rangeMax": 140,
+        "status": "critical"
+      },
+      {
+        "id": "ev-001e",
+        "code": "2345-7",
+        "system": "metabolic",
+        "label": "Glucose",
+        "value": "94",
+        "unit": "mg/dL",
+        "occurredAt": "2026-07-20T07:45:00Z",
+        "baselineValue": "88",
+        "rangeMin": 70,
+        "rangeMax": 100,
+        "status": "stable"
+      }
+    ],
+    "flagNote": "Amara's LDL has climbed across 3 consecutive readings and is now well above the normal range for her age — recommend scheduling a same-week clinical review. Blood pressure also elevated on the same visit.",
+    "drugInteractionNote": "Warfarin and aspirin together raise bleeding risk — flag for supervising clinician before next home visit."
+  },
+  {
+    "id": "pt-002",
+    "name": "Emmanuel Adeyemi",
+    "age": 58,
+    "sex": "male",
+    "grantToken": "DEMO_GRANT_PT002",
+    "systems": ["metabolic", "cardiovascular"],
+    "medications": [42463],
+    "events": [
+      {
+        "id": "ev-002a",
+        "code": "2345-7",
+        "system": "metabolic",
+        "label": "Glucose",
+        "value": "118",
+        "unit": "mg/dL",
+        "occurredAt": "2026-07-21T07:30:00Z",
+        "baselineValue": "98",
+        "rangeMin": 70,
+        "rangeMax": 110,
+        "status": "watch"
+      },
+      {
+        "id": "ev-002b",
+        "code": "2345-7",
+        "system": "metabolic",
+        "label": "Glucose",
+        "value": "108",
+        "unit": "mg/dL",
+        "occurredAt": "2026-07-14T07:30:00Z",
+        "baselineValue": "98",
+        "rangeMin": 70,
+        "rangeMax": 110,
+        "status": "watch"
+      },
+      {
+        "id": "ev-002c",
+        "code": "55284-4",
+        "system": "cardiovascular",
+        "label": "Blood Pressure (Systolic)",
+        "value": "132",
+        "unit": "mmHg",
+        "occurredAt": "2026-07-21T07:35:00Z",
+        "baselineValue": "122",
+        "rangeMin": 90,
+        "rangeMax": 140,
+        "status": "stable"
+      }
+    ],
+    "flagNote": "Emmanuel's fasting glucose has been above his normal range for two visits in a row — worth monitoring diet and activity before the next reading. Not urgent yet, but trending."
+  },
+  {
+    "id": "pt-003",
+    "name": "Ngozi Eze",
+    "age": 32,
+    "sex": "female",
+    "grantToken": "DEMO_GRANT_PT003",
+    "systems": ["cardiovascular", "musculoskeletal"],
+    "medications": [],
+    "events": [
+      {
+        "id": "ev-003a",
+        "code": "55284-4",
+        "system": "cardiovascular",
+        "label": "Blood Pressure (Systolic)",
+        "value": "112",
+        "unit": "mmHg",
+        "occurredAt": "2026-07-22T09:00:00Z",
+        "baselineValue": "110",
+        "rangeMin": 90,
+        "rangeMax": 135,
+        "status": "stable"
+      },
+      {
+        "id": "ev-003b",
+        "code": "8867-4",
+        "system": "cardiovascular",
+        "label": "Heart Rate",
+        "value": "72",
+        "unit": "bpm",
+        "occurredAt": "2026-07-22T09:00:00Z",
+        "baselineValue": "70",
+        "rangeMin": 60,
+        "rangeMax": 100,
+        "status": "stable"
+      },
+      {
+        "id": "ev-003c",
+        "code": "8310-5",
+        "system": "musculoskeletal",
+        "label": "Body Temperature",
+        "value": "36.8",
+        "unit": "°C",
+        "occurredAt": "2026-07-22T09:00:00Z",
+        "baselineValue": "36.6",
+        "rangeMin": 36.1,
+        "rangeMax": 37.2,
+        "status": "stable"
+      }
+    ],
+    "flagNote": null
+  },
+  {
+    "id": "pt-004",
+    "name": "Chukwuemeka Nwosu",
+    "age": 67,
+    "sex": "male",
+    "grantToken": "DEMO_GRANT_PT004",
+    "systems": ["cardiovascular", "metabolic"],
+    "medications": [1191, 11289, 42463],
+    "events": [
+      {
+        "id": "ev-004a",
+        "code": "2093-3",
+        "system": "cardiovascular",
+        "label": "LDL Cholesterol",
+        "value": "172",
+        "unit": "mg/dL",
+        "occurredAt": "2026-07-22T07:00:00Z",
+        "baselineValue": "128",
+        "rangeMin": 0,
+        "rangeMax": 130,
+        "status": "critical"
+      },
+      {
+        "id": "ev-004b",
+        "code": "2345-7",
+        "system": "metabolic",
+        "label": "Glucose",
+        "value": "143",
+        "unit": "mg/dL",
+        "occurredAt": "2026-07-22T07:00:00Z",
+        "baselineValue": "106",
+        "rangeMin": 70,
+        "rangeMax": 115,
+        "status": "critical"
+      },
+      {
+        "id": "ev-004c",
+        "code": "55284-4",
+        "system": "cardiovascular",
+        "label": "Blood Pressure (Systolic)",
+        "value": "162",
+        "unit": "mmHg",
+        "occurredAt": "2026-07-22T07:05:00Z",
+        "baselineValue": "138",
+        "rangeMin": 90,
+        "rangeMax": 140,
+        "status": "critical"
+      }
+    ],
+    "flagNote": "Three critical readings on the same visit: LDL, glucose, and blood pressure all significantly above Chukwuemeka's personal baseline and HOLON reference ranges for his age. Recommend same-day escalation to supervising clinician.",
+    "drugInteractionNote": "Warfarin + aspirin + metformin combination detected. Recommend pharmacist review before next dosing."
+  },
+  {
+    "id": "pt-005",
+    "name": "Fatima Bello",
+    "age": 28,
+    "sex": "female",
+    "grantToken": "DEMO_GRANT_PT005",
+    "systems": ["metabolic", "cardiovascular"],
+    "medications": [],
+    "events": [
+      {
+        "id": "ev-005a",
+        "code": "2345-7",
+        "system": "metabolic",
+        "label": "Glucose",
+        "value": "82",
+        "unit": "mg/dL",
+        "occurredAt": "2026-07-22T10:00:00Z",
+        "baselineValue": "83",
+        "rangeMin": 70,
+        "rangeMax": 100,
+        "status": "stable"
+      },
+      {
+        "id": "ev-005b",
+        "code": "55284-4",
+        "system": "cardiovascular",
+        "label": "Blood Pressure (Systolic)",
+        "value": "108",
+        "unit": "mmHg",
+        "occurredAt": "2026-07-22T10:00:00Z",
+        "baselineValue": "105",
+        "rangeMin": 90,
+        "rangeMax": 130,
+        "status": "stable"
+      },
+      {
+        "id": "ev-005c",
+        "code": "2093-3",
+        "system": "cardiovascular",
+        "label": "LDL Cholesterol",
+        "value": "121",
+        "unit": "mg/dL",
+        "occurredAt": "2026-07-17T10:00:00Z",
+        "baselineValue": "115",
+        "rangeMin": 0,
+        "rangeMax": 130,
+        "status": "watch"
+      }
+    ],
+    "flagNote": null
+  }
+]

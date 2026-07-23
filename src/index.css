@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base reset ─────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  background-color: #F7FAF9; /* baseline-bg-canvas */
+  color: #12211F;            /* baseline-ink-900 */
+  min-height: 100vh;
+}
+
+/* ─── Tabular numbers everywhere in mono context ─────────────────── */
+.font-mono,
+[data-numeric],
+.vital-value {
+  font-family: 'IBM Plex Mono', Menlo, monospace;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+/* ─── Scrollbar styling ──────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: #DCE6E3; /* border-subtle */
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover { background: #5C6B68; }
+
+/* ─── Slide-over overlay backdrop ───────────────────────────────── */
+.slide-over-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 47, 43, 0.35); /* teal-950 tinted */
+  backdrop-filter: blur(2px);
+  z-index: 40;
+  animation: fade-in 0.2s ease-out;
+}
+
+/* ─── Demo controls distinct styling ─────────────────────────────── */
+.demo-controls-wrapper {
+  border: 1.5px dashed #DCE6E3;
+  border-radius: 8px;
+}
+
+/* ─── Status badge pill ───────────────────────────────────────────── */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.status-badge--critical {
+  background: rgba(214, 69, 69, 0.12);
+  color: #D64545;
+}
+
+.status-badge--watch {
+  background: rgba(224, 164, 88, 0.14);
+  color: #C8892A;
+}
+
+.status-badge--stable {
+  background: rgba(79, 157, 140, 0.12);
+  color: #2E7D6A;
+}
+
+/* ─── Baseline indicator track ───────────────────────────────────── */
+.bl-track {
+  position: relative;
+  width: 56px;
+  height: 2px;
+  background: #DCE6E3;
+  border-radius: 1px;
+}
+
+.bl-dot {
+  position: absolute;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: left 0.4s ease, background-color 0.3s ease;
+}
+
+.bl-dot--critical { background: #D64545; }
+.bl-dot--watch    { background: #E0A458; }
+.bl-dot--stable   { background: #4F9D8C; }
+
+/* Skeleton pulse state */
+.bl-dot--skeleton {
+  background: #DCE6E3;
+  animation: pulse-dot 1.4s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+
+/* ─── Patient card hover ─────────────────────────────────────────── */
+.patient-card {
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+  cursor: pointer;
+}
+
+.patient-card:hover {
+  box-shadow: 0 4px 16px rgba(14, 75, 68, 0.10);
+  transform: translateY(-1px);
+}
+
+/* ─── Live dot ───────────────────────────────────────────────────── */
+.live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4F9D8C;
+  animation: pulse-dot 1.4s ease-in-out infinite;
+}
+
+.live-dot--event {
+  animation: live-flash 0.6s ease-out;
+}
+
+@keyframes live-flash {
+  0%   { background: #4F9D8C; box-shadow: 0 0 0 0 rgba(79,157,140,0.7); }
+  50%  { background: #4F9D8C; box-shadow: 0 0 0 6px rgba(79,157,140,0); }
+  100% { background: #4F9D8C; box-shadow: none; }
+}
+
+/* ─── Recharts custom ────────────────────────────────────────────── */
+.recharts-tooltip-wrapper {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+}
