@@ -27,3 +27,5 @@ dist-ssr
 .env
 .env.local
 demo-state.json
+Baseline files
+Baseline files/*
